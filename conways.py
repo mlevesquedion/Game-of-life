@@ -130,7 +130,7 @@ while True: # Main game loop
                     shelf = shelve.open('savestate')
                     array = shelf['array']
                     shelf.close()
-                    
+
     screen.fill(WHITE)
 
     draw_array()
@@ -142,6 +142,6 @@ while True: # Main game loop
         update_shouldSwitchStates()
         update_array()
         elapsedTime = 0
-    
+
     pygame.display.update()
     elapsedTime += FPSclock.tick()
